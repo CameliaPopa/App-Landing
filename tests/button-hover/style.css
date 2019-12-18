@@ -1,0 +1,59 @@
+body {
+  background: #D61D58;
+  font-size: 62.5%;
+}
+
+.container {
+  padding: 2em;
+}
+
+/* GENERAL BUTTON STYLING */
+.button-learn, .button-learn::after {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.button-learn {
+  background: none;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  display: block;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 1em auto;
+  padding: 2em 6em;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.button-learn::before, .button-learn::after {
+  background: #fff;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+.button-learn:hover {
+  color: #474747;
+}
+
+
+/* BUTTON 3 */
+.btn-3::after {
+  background: #FFFFFF;
+  height: 0;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  border-radius: 50%;
+}
+
+.btn-3:hover:after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
