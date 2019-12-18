@@ -27,6 +27,11 @@
                     <div class="download-button">
                         <span>DOWNLOAD</span>
                     </div>
+                    <div class="nav-burger" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
                 </div>
             </div>
             <div class="container">
@@ -42,7 +47,7 @@
                             <span>GET START</span>
                         </div>
                         <div class="container-button-learn">
-                            <span id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">LEARN MORE</span>
+                            <span>LEARN MORE</span>
                         </div>
                     </div>
                 </div>
@@ -89,8 +94,8 @@
             <div class="widget-container-two">
                 <div class="widget-container-left">
                     <img class="img3" width="883" height="235" src="https://demo.phlox.pro/app-landing/wp-content/uploads/sites/45/2018/07/screen-3-1-883x235.png">
-                    <img class="img2" width="919" height="210" src="https://demo.phlox.pro/app-landing/wp-content/uploads/sites/45/2018/07/screen-2-1-919x210.png">
-                    <img class="img1" width="909" height="240" src="https://demo.phlox.pro/app-landing/wp-content/uploads/sites/45/2018/07/screen-1-1-909x240.png">
+                    <img class="img2 rellax" data-rellax-speed="2" width="919" height="210" src="https://demo.phlox.pro/app-landing/wp-content/uploads/sites/45/2018/07/screen-2-1-919x210.png">
+                    <img class="img1 rellax" data-rellax-speed="3" width="909" height="240" src="https://demo.phlox.pro/app-landing/wp-content/uploads/sites/45/2018/07/screen-1-1-909x240.png">
                 </div>
                 <div class="widget-container-right">
                     <div class="title"><h2>The Most Memorable Experience with Phlox App</h2></div>
@@ -122,26 +127,34 @@
                     <div class="icons">
                         <div class="icons-top">
                             <div class="icon">
+                              <div  class="hover hover-1">
                                 <img src="images/tablet.png"/>
                                 <h2>Fully Responsive</h2>
                                 <p> Apparently we had reached a great height in the atmosphere, for the sky.</p>
+                              </div>
                             </div>
                             <div class="icon">
+                              <div  class="hover hover-1">
                                 <img src="images/settings.png"/>
-                                <h2>Fully Responsive</h2>
+                                <h2>Unlimited Features</h2>
                                 <p> Apparently we had reached a great height in the atmosphere, for the sky.</p>
+                              </div>
                             </div>
                         </div>
                         <div class="icons-bottom">
                             <div class="icon">
+                              <div  class="hover hover-1">
                                 <img src="images/note.png"/>
-                                <h2>Fully Responsive</h2>
+                                <h2>Retina Ready</h2>
                                 <p> Apparently we had reached a great height in the atmosphere, for the sky.</p>
+                              </div>
                             </div>
                             <div class="icon">
+                              <div  class="hover hover-1">
                                 <img src="images/share.png"/>
-                                <h2>Fully Responsive</h2>
+                                <h2>Easy Sharing</h2>
                                 <p> Apparently we had reached a great height in the atmosphere, for the sky.</p>
+                              </div>
                             </div>
                         </div>
                     </div>
@@ -250,7 +263,7 @@
                     <div class="buttons-download">
                         <div class="container-download-button-start">
                             <img src="images/apple.png">
-                            <span>APPLE STORE</span>
+                            <span class="button-learn btn-3" >APPLE STORE</span>
                         </div>
                         <div class="container-download-button-learn">
                             <img src="images/android.png">
@@ -333,5 +346,10 @@
     <script src="rellax.min.js"></script>
     <script>
         var rellax = new Rellax('.rellax');
+    </script>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
     </script>
 </html>
