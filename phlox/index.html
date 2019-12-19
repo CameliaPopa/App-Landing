@@ -16,12 +16,12 @@
                     <div class="top-menu">
                         <ul>
                             <li><a href="#"><span>Home</span></a></li>
-                            <li><a href="#"><span>About</span></a></li>
-                            <li><a href="#"><span>Feature</span></a></li>
-                            <li><a href="#"><span>Testimonial</span></a></li>
-                            <li><a href="#"><span>Screenshot</span></a></li>
-                            <li><a href="#"><span>Download</span></a></li>
-                            <li><a href="#"><span>Contact</span></a></li>
+                            <li><a href="#about"><span>About</span></a></li>
+                            <li><a href="#features"><span>Feature</span></a></li>
+                            <li><a href="#testimonial"><span>Testimonial</span></a></li>
+                            <li><a href="#screenshots"><span>Screenshot</span></a></li>
+                            <li><a href="#download"><span>Download</span></a></li>
+                            <li><a href="#contact"><span>Contact</span></a></li>
                         </ul>
                     </div>
                     <div class="download-button">
@@ -42,13 +42,17 @@
                     <div class ="container-left-description">
                         <span>Apparently we had reached a great height in the atmosphere, for the sky.</span>
                     </div>
-                    <div class="buttons">
+                    <!--<div class="buttons">
                         <div class="container-button-start">
                             <span>GET START</span>
                         </div>
                         <div class="container-button-learn">
                             <span>LEARN MORE</span>
                         </div>
+                    </div> -->
+                    <div class="buttonss">
+                        <span class="button-start btn-2">GET START</span>
+                        <span class="button-learn btn-3">LEARN MORE</span>
                     </div>
                 </div>
                 <div class="container-right rellax" data-rellax-speed="6">
@@ -97,7 +101,7 @@
                     <img class="img2 rellax" data-rellax-speed="2" width="919" height="210" src="https://demo.phlox.pro/app-landing/wp-content/uploads/sites/45/2018/07/screen-2-1-919x210.png">
                     <img class="img1 rellax" data-rellax-speed="3" width="909" height="240" src="https://demo.phlox.pro/app-landing/wp-content/uploads/sites/45/2018/07/screen-1-1-909x240.png">
                 </div>
-                <div class="widget-container-right">
+                <div class="widget-container-right" id="about">
                     <div class="title"><h2>The Most Memorable Experience with Phlox App</h2></div>
                     <div class="divider"></div>
                     <ul>
@@ -112,13 +116,14 @@
                 </div>
             </div>
             <div class="container-features">
-                <div class="container-features-left"></div>
+                <div class="container-features-left">
                 <img class="features-image" width="350" height="729" src="https://demo.phlox.pro/app-landing/wp-content/uploads/sites/45/2018/07/Place-your-design-here5-1-1-409x881.png">
                 <div class="circles">
                     <div class="circle-one"></div>
                     <div class="circle-two"></div>
                 </div>
-                <div class="container-features-right">
+                </div>
+                <div class="container-features-right" id="features">
                     <div class="title">
                         <h2>Our Other Features</h2>
                         <div class="divider"></div>
@@ -160,7 +165,7 @@
                     </div>
                 </div>
             </div>
-            <div class="screenshots">
+            <div class="screenshots" id="screenshots">
                 <div class = "wrapper-screenshots-title">
                     <div class="screenshots-title">
                         <h1>App Screenshots</h1>
@@ -176,8 +181,8 @@
                         <div class="slide"><img src="https://demo.phlox.pro/app-landing/wp-content/uploads/sites/45/2018/07/shot-3-1.png" alt="" style="border-radius: 5%"></div>
                         <div class="slide"><img src="https://demo.phlox.pro/app-landing/wp-content/uploads/sites/45/2018/07/shot-2-1.png" alt="" style="border-radius: 5%"></div>
                         <div class="slide"><img src="https://demo.phlox.pro/app-landing/wp-content/uploads/sites/45/2018/07/shot-1-1.png" alt="" style="border-radius: 5%"></div>
-                        <div class="slide"><img  src="https://demo.phlox.pro/app-landing/wp-content/uploads/sites/45/2018/07/shot-3-1.png" alt=""style="border-radius: 5%"></div>
-                        <div class="slide"><img  src="https://demo.phlox.pro/app-landing/wp-content/uploads/sites/45/2018/07/shot-2-1.png" alt=""style="border-radius: 5%"></div>
+                        <div class="slide"><img src="https://demo.phlox.pro/app-landing/wp-content/uploads/sites/45/2018/07/shot-3-1.png" alt=""style="border-radius: 5%"></div>
+                        <div class="slide"><img src="https://demo.phlox.pro/app-landing/wp-content/uploads/sites/45/2018/07/shot-2-1.png" alt=""style="border-radius: 5%"></div>
                     </div>
                 </div>
                 <div class="screenshots-two">
@@ -199,7 +204,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section-testimonial">
+            <div class="section-testimonial" id="testimonial">
                 <div class="section">
                     <div class="section-one">
                         <img width="110" height="110" src="https://demo.phlox.pro/app-landing/wp-content/uploads/sites/45/2018/07/Mask-Group-2@2x.png" class="attachment-thumbnail size-thumbnail" alt="">
@@ -251,7 +256,7 @@
                     <div class="content">Apparently we had reached a great height in the atmos, for the sky was a dead black, and the stars had ceased to twinkle.reached a great height in the atmosphere, dead black, and the stars.</div>
                 </div>
             </div>
-            <div class="container-download">
+            <div class="container-download" id="download">
                 <div class="container-download-left">
                     <div class="container-download-left-title">
                         <span>Download Phlox Today</span>
@@ -267,7 +272,7 @@
                         </div>
                         <div class="container-download-button-learn">
                             <img src="images/android.png">
-                            <span id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">GOOGLE PLAY</span>
+                            <span>GOOGLE PLAY</span>
                         </div>
                     </div>
                 </div>
@@ -275,7 +280,7 @@
                     <img width="1200" height="875" src="https://demo.phlox.pro/app-landing/wp-content/uploads/sites/45/2018/07/Template-6.png"  srcset="https://demo.phlox.pro/app-landing/wp-content/uploads/sites/45/2018/07/Template-6.png 1200w, https://demo.phlox.pro/app-landing/wp-content/uploads/sites/45/2018/07/Template-6-300x219.png 300w, https://demo.phlox.pro/app-landing/wp-content/uploads/sites/45/2018/07/Template-6-768x560.png 768w, https://demo.phlox.pro/app-landing/wp-content/uploads/sites/45/2018/07/Template-6-1024x747.png 1024w" sizes="(max-width: 1200px) 100vw, 1200px">
                 </div>
             </div>
-            <div class="container-subscribe">
+            <div class="container-subscribe" id="contact">
                 <div class="container-subscribe-title">Subscribe to our newsletter</div>
                 <div class="container-subscribe-description">Apparently we had reached a great height in the atmosphere, for the sky was a dead <br> black, and the stars had.</div>
                 <div class="container-subscribe-form">
@@ -342,14 +347,14 @@
                 setTimeout(carousel, 2000);
             }
         </script>
+        <script src="rellax.min.js"></script>
+        <script>
+            var rellax = new Rellax('.rellax');
+        </script>
+        <script>
+            function myFunction(x) {
+                x.classList.toggle("change");
+            }
+        </script>
     </body>
-    <script src="rellax.min.js"></script>
-    <script>
-        var rellax = new Rellax('.rellax');
-    </script>
-    <script>
-        function myFunction(x) {
-            x.classList.toggle("change");
-        }
-    </script>
 </html>

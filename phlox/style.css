@@ -16,7 +16,7 @@ body {
 .wrapper {
     background-image: linear-gradient(117deg,#fc2f52 0%,#9c0061 100%);
     width: 100%;
-    max-width: 1800px;
+
     margin: 0 auto;
 }
 
@@ -83,8 +83,6 @@ body {
 }
 
 .container {
-    width: auto;
-    min-width: 100%;
     display: flex;
     margin-left: 50px;
 }
@@ -112,7 +110,7 @@ body {
     line-height: 31px;
     margin: 0 0 1em;
 }
-
+/*
 .buttons {
     display: flex;
     margin-top: 70px;
@@ -142,6 +140,103 @@ body {
     border-color: #FFFFFF;
     margin-left: 10px;
 }
+*/
+.buttonss {
+    position: absolute;
+    z-index: 2;
+    margin-top: 65px;
+    margin-right: 10px;
+    font-family: "Titillium Web",Sans-serif;
+    font-size: 16px;
+}
+
+/* GENERAL BUTTON STYLING */
+.button-learn, .button-learn::after, .button-start, .button-start::after {
+    -webkit-transition: all 0.2s;
+  	-moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+  	transition: all 0.2s;
+}
+
+.button-learn {
+    background: none;
+    border: 1px solid #FFFFFF;
+    border-radius: 100em;
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: 2em auto;
+    padding: 14px 38px;
+    position: relative;
+    text-transform: uppercase;
+    font-family: "Titillium Web",Sans-serif;
+}
+
+.button-start {
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 100em;
+    color: #1D1D1D;
+    font-size: 16px;
+    margin: 2em auto;
+    padding: 14px 38px;
+    position: relative;
+    text-transform: uppercase;
+    font-family: "Titillium Web",Sans-serif;
+  }
+
+.button-learn::before, .button-learn::after {
+    background: #fff;
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+.button-start::before, .button-start::after {
+    background: #fff;
+    content: '';
+    position: absolute;
+    z-index: 3;
+}
+
+.button-learn:hover {
+    color: #1D1D1D;
+}
+
+.button-start:hover {
+    color: #1D1D1D;
+}
+
+.btn-3::after {
+    background: #FFFFFF;
+    height: 0;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    border-radius: 100em;
+}
+
+.btn-3:hover:after {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.btn-2::after {
+    background: #ebebeb;
+    height: 0;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    border-radius: 100em;
+}
+
+.btn-2:hover:after {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
 
 .container .container-right {
     width: 50%;
@@ -168,7 +263,6 @@ body {
     background-repeat: repeat-x;
     background-position: center;
     width: 100%;
-    max-width: 1800px;
     position: absolute;
     background-size: 3000px 467px;
     transform: translateY(-89%);
@@ -195,7 +289,7 @@ body {
     height: 4px;
     width: 70px;
     background-color: #fc2f52;
-    margin-left: 833px;
+    margin-left: 909px;
 }
 
 .widget-elements {
@@ -287,6 +381,10 @@ body {
     color: #FFFFFF;
 }
 
+.widget-container-right .download2-button span:hover {
+    background-color: #cc2743;
+}
+
 .widget-container-right ul {
     list-style: none;
     color: #686868;
@@ -319,7 +417,6 @@ body {
 .container-features {
     background: #FFFFFF;
     width: 100%;
-    max-width: 1800px;
     display: flex;
     padding-top: 140px;
     padding-bottom: 140px;
@@ -451,7 +548,6 @@ body {
 .screenshots {
     background: #F3F3F3;
     width: 100%;
-    max-width: 1800px;
     padding-top: 100px;
     padding-bottom: 140px;
     text-align: center;
@@ -503,11 +599,11 @@ body {
     margin-top: -27px;
     width: 360px;
     height: 652px;
-    margin-left: 149px;
+    margin-left: 136px;
 }
 
 .customer-logos {
-    width: 138%;
+    width: 1260px;
 }
 
 .screenshots-two {
@@ -516,7 +612,7 @@ body {
     z-index: 1;
     box-sizing: border-box;
     width: 40%;
-    margin-left: 996px;
+    margin-left: 1012px;
     margin-top: 212px;
     padding-left: 66px;
     padding-bottom: 35px;
@@ -716,12 +812,11 @@ body {
 /* End Silder */
 
 .section-testimonial {
-    max-width: 1800px;
     display: flex;
     background: #FFFFFF;
     padding-top: 150px;
     padding-bottom: 150px;
-    padding-left: 270px;
+    padding-left: 375px;
 }
 
 .section-testimonial .section {
@@ -766,8 +861,7 @@ body {
 }
 
 .container-download {
-    width: auto;
-    min-width: 100%;
+    width: 100%;
     display: flex;
     background: linear-gradient(135deg, rgba(29,29,29,1) 0%, rgba(29,29,29,1) 62%, rgba(252,47,82,1) 62%, rgba(220,0,37,1) 100%);
 }
@@ -978,11 +1072,10 @@ body {
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
 .wrapper {
     width: 100%;
-    max-width: 767px;
     margin: 0 auto;
     background-image: linear-gradient(90deg,#fc2f52 0%,#9c0061 100%);
 }
@@ -1174,7 +1267,6 @@ body {
 
 .screenshots {
     width: 100%;
-    max-width: 767px;
     display: block;
 }
 
@@ -1196,15 +1288,14 @@ body {
 }
 
 .screenshots .img-phone {
-    margin-top: -22px;
-    margin-left: -33px;
-    width: 274px;
-    height: 500px;
+    margin-top: -15px;
+    margin-left: -192px;
+    width: 198px;
+    height: 350px;
 }
 
 .screenshots .screenshots-content {
-    width: 72%;
-    max-width: 760px;
+    width: 100%;
     margin-top: 255px;
     padding-left: 0px;
 }
@@ -1227,14 +1318,13 @@ body {
 
 .section-testimonial .section {
     margin-bottom: 65px;
-    width: 575px;
-    margin-left: 38px;
-    padding: 50px;
+    width: 70%;
+    margin-left: 80px;
+    padding: 40px;
 }
 
 .container-download {
     width: 100%;
-    display: block;
 }
 
 .container-download .container-download-left {
@@ -1251,8 +1341,7 @@ body {
 
 .container-download .container-download-right {
     margin-left: 0px;
-    margin-top: -610px;
-    width: -33%;
+    margin-top: 565px;
 }
 
 .container-download .container-download-right img {
@@ -1279,4 +1368,10 @@ body {
 .site-footer .menu-footer-nav {
     margin-left: 0px;
 }
+
+.customer-logos {
+    width: 100%;
+}
+
+
 }
