@@ -1,0 +1,110 @@
+
+ .slider , .slider1, .slider2, .slider3 {
+	 overflow-y: hidden;
+	 max-height: 500px;
+	/* approximate max height */
+	 box-sizing: border-box;
+	 transition-property: all;
+	 transition-duration: 0.5s;
+	 transition-timing-function: ease;
+}
+ .slider.closed , .slider1.closed , .slider2.closed , .slider3.closed {
+	 max-height: 0;
+}
+ .slider, .slider1 , .slider2 , .slider3 {
+	 background: -webkit-linear-gradient(left, rgba(252,47,82,1) 0%, rgba(220,0,37,1) 100%);
+	 padding: 0 1em;
+	 margin: 1em 0;
+	 border-radius: 0.2em;
+}
+
+
+ .button, .button1 , .button2 , .button3  {
+	 display: block;
+	 height: 2em;
+	 background: #FFFFFF;
+	 text-align: center;
+	 color: #1D1D1D;
+	 font-weight: 100;
+	 font-size: 2em;
+	 line-height: 2em;
+	 border-radius: 0.25em;
+	 text-decoration: none;
+}
+
+ .button:hover, .button1:hover , .button2:hover , .button3:hover  {
+   background: -webkit-linear-gradient(left, rgba(252,47,82,1) 0%, rgba(220,0,37,1) 100%);
+ }
+
+
+
+
+
+
+
+
+
+.screenshots-two {
+    position: absolute;
+    background-color: #F3F3F3;
+    z-index: 1;
+    box-sizing: border-box;
+    width: 40%;
+    margin-left: 1012px;
+    margin-top: 212px;
+    padding-left: 66px;
+    padding-bottom: 35px;
+    padding-top: 23px;
+
+}
+/*
+.screenshots-two .grid {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 20px rgba(0,0,0,.16);
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin-left: 78px;
+}
+
+.screenshots-two .grid h1 {
+    padding: 25px 42px 25px 45px;
+    margin: 0;
+    border-radius: 0;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 0;
+    border-color: #fff;
+    color: #474747;
+    font-family: "Titillium Web",Sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 39px;
+    text-align: start;
+}
+
+ #grid-one  h1{
+    color: #FFFFFF;
+ }
+
+.screenshots-two .grid #grid-one-p1, #grid-one-p2, #grid-one-p3  {
+    display: none;
+}
+
+.screenshots-two #grid-one {
+    background: -webkit-linear-gradient(left, rgba(252,47,82,1) 0%, rgba(220,0,37,1) 100%);
+    color: #FFFFFF;
+}
+
+.screenshots-two .grid #grid-one-p {
+    color: #f9b8c3;
+    padding-left: 43px;
+    padding-right: 50px;
+    padding-bottom: 32px;
+    text-align: initial;
+    font-family: "Titillium Web",Sans-serif;
+    font-size: 17px;
+}
+*/
